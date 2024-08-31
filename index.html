@@ -155,94 +155,96 @@
         </div>
 
         <!-- search container -->
-        <div
-          class="bg-white mt-28 lg:mt-0 container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 justify-center place-content-center p-3 shadow-md gap-5"
-        >
-          <div class="flex justify-left items-center gap-4">
-            <div class="h-9 w-px bg-gray-400 sm:bg-white"></div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="#747474"
-              class="size-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
-              />
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
-              />
-            </svg>
-            <div>
-              <h4 class="text-base leading-none font-medium text-[#3E3E3E]">
-                Location
-              </h4>
-              <small class="text-sm leading-none font-normal text-[#B6B6B6]"
-                >Search your location</small
+        <div class="px-2 lg:px-0">
+          <div
+            class="bg-white mt-28 lg:mt-0 container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 justify-center place-content-center p-3 shadow-md gap-5 rounded-xl"
+          >
+            <div class="flex justify-left items-center gap-4">
+              <div class="h-9 w-px bg-gray-400 sm:bg-white"></div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#747474"
+                class="size-6"
               >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                />
+              </svg>
+              <div>
+                <h4 class="text-base leading-none font-medium text-[#3E3E3E]">
+                  Location
+                </h4>
+                <small class="text-sm leading-none font-normal text-[#B6B6B6]"
+                  >Search your location</small
+                >
+              </div>
             </div>
-          </div>
-          <div class="flex justify-left items-center gap-4">
-            <div class="h-9 w-px bg-gray-400"></div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="#747474"
-              class="size-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
-              />
-            </svg>
+            <div class="flex justify-left items-center gap-4">
+              <div class="h-9 w-px bg-gray-400"></div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#747474"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
+                />
+              </svg>
 
-            <div>
-              <h4 class="text-base leading-none font-medium text-[#3E3E3E]">
-                Pickup date
-              </h4>
-              <small class="text-sm leading-none font-normal text-[#B6B6B6]"
-                >Tue 15 Feb, 09:00</small
-              >
+              <div>
+                <h4 class="text-base leading-none font-medium text-[#3E3E3E]">
+                  Pickup date
+                </h4>
+                <small class="text-sm leading-none font-normal text-[#B6B6B6]"
+                  >Tue 15 Feb, 09:00</small
+                >
+              </div>
             </div>
-          </div>
-          <div class="flex justify-left items-center gap-4">
-            <div class="h-9 w-px bg-gray-400"></div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="#747474"
-              class="size-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
-              />
-            </svg>
-            <div>
-              <h4 class="text-base leading-none font-medium text-[#3E3E3E]">
-                Return date
-              </h4>
-              <small class="text-sm leading-none font-normal text-[#B6B6B6]"
-                >Thu 16 Feb, 11:00</small
+            <div class="flex justify-left items-center gap-4">
+              <div class="h-9 w-px bg-gray-400"></div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#747474"
+                class="size-6"
               >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
+                />
+              </svg>
+              <div>
+                <h4 class="text-base leading-none font-medium text-[#3E3E3E]">
+                  Return date
+                </h4>
+                <small class="text-sm leading-none font-normal text-[#B6B6B6]"
+                  >Thu 16 Feb, 11:00</small
+                >
+              </div>
             </div>
-          </div>
-          <div class="inline-flex justify-center sm:justify-end">
-            <button class="btn text-white bg-[#1572D3] font-medium px-[51px]">
-              Search
-            </button>
+            <div class="inline-flex justify-center sm:justify-end">
+              <button class="btn text-white bg-[#1572D3] font-medium px-[51px]">
+                Search
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -261,7 +263,9 @@
           </h2>
 
           <!-- card container -->
-          <div class="flex gap-32 justify-center items-center mb-40">
+          <div
+            class="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-32 justify-center place-items-center mb-40"
+          >
             <!-- card 1 -->
             <div>
               <i
@@ -297,7 +301,9 @@
           </div>
 
           <!-- sponsors container -->
-          <div class="flex gap-24 justify-center items-center mb-[86px]">
+          <div
+            class="grid grid-cols-3 md:grid-cols-6 gap-10 md:gap-24 justify-center place-items-center mb-[86px]"
+          >
             <img src="./icons/honda.png" alt="" />
             <img src="./icons/jaguar.png" alt="" />
             <img src="./icons/nissan.png" alt="" />
@@ -308,7 +314,101 @@
         </div>
       </section>
 
-      <!--  -->
+      <!-- Why choose us section -->
+      <section>
+        <div class="relative">
+          <!-- image container -->
+          <div class="absolute top-20 lg:top-1/2 -left-[9%]">
+            <img src="./images/Audi1.png" alt="" />
+          </div>
+          <div class="absolute -top-10 lg:top-1/4 -left-[18%] -z-10">
+            <img src="./icons/bg_triangle.png" alt="" />
+          </div>
+
+          <!-- text container -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-64 sm:gap-96 lg:gap-36 px-2 lg:px-0">
+            <div></div>
+            <div class="mt-32">
+              <button class="btn text-[#1572D3] text-sm font-medium bg-blue-50">
+                WHY CHOOSE US
+              </button>
+              <h1 class="text-[38px] font-medium mt-8 mb-14 2xl:w-2/3">
+                We offer the best experience with our rental deals
+              </h1>
+
+              <!-- card container -->
+              <div class="flex flex-col gap-10 lg:w-[450px]">
+                <!-- card 1 -->
+                <div class="flex gap-6 items-center">
+                  <img
+                    class="p-5 bg-[#ECF5FF] rounded-2xl"
+                    src="./icons/vuesax_bold_wallet.png"
+                    alt=""
+                  />
+                  <div>
+                    <h4 class="text-xl font-medium mb-2">
+                      Best price guaranteed
+                    </h4>
+                    <p class="text-base font-normal text-gray-500">
+                      Find a lower price? We’ll refund you 100% of the
+                      difference.
+                    </p>
+                  </div>
+                </div>
+                <!-- card 2 -->
+                <div class="flex gap-6 items-center">
+                  <img
+                    class="p-5 bg-[#ECF5FF] rounded-2xl"
+                    src="./icons/vuesax_bold_user-tick.png"
+                    alt=""
+                  />
+                  <div>
+                    <h4 class="text-xl font-medium mb-2">Experience driver</h4>
+                    <p class="text-base font-normal text-gray-500">
+                      Don’t have driver? Don’t worry, we have many experienced
+                      driver for you.
+                    </p>
+                  </div>
+                </div>
+                <!-- card 3 -->
+                <div class="flex gap-6 items-center">
+                  <img
+                    class="p-5 bg-[#ECF5FF] rounded-2xl"
+                    src="./icons/vuesax_bold_24-support.png"
+                    alt=""
+                  />
+                  <div>
+                    <h4 class="text-xl font-medium mb-2">
+                      24 hour car delivery
+                    </h4>
+                    <p class="text-base font-normal text-gray-500">
+                      Book your car anytime and we will deliver it directly to
+                      you.
+                    </p>
+                  </div>
+                </div>
+                <!-- card 4 -->
+                <div class="flex gap-6 items-center">
+                  <img
+                    class="p-5 bg-[#ECF5FF] rounded-2xl"
+                    src="./icons/vuesax_bold_24-support.png"
+                    alt=""
+                  />
+                  <div>
+                    <h4 class="text-xl font-medium mb-2">
+                      24/7 technical support
+                    </h4>
+                    <p class="text-base font-normal text-gray-500">
+                      Have a question? Contact Rentcars support any time when
+                      you have problem.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="mt-[1000px]"></footer>
