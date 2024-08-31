@@ -18,6 +18,12 @@
       rel="stylesheet"
     />
 
+    <!-- Icons cdn -->
+    <script
+      src="https://kit.fontawesome.com/651adfbaf7.js"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- DaisyUI and Tailwind CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
@@ -25,6 +31,17 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
 
     <style>
       .font-poppins {
@@ -32,9 +49,15 @@
       }
     </style>
   </head>
-  <body class="font-poppins">
+  <body class="font-poppins relative">
     <header>
-      <nav class="mt-8">
+      <img
+        class="absolute right-0 top-0 -z-10 opacity-15"
+        src="./icons/banner_vector_bg.png"
+        alt=""
+      />
+
+      <nav class="pt-8">
         <!-- Navbar -->
         <div class="navbar container mx-auto">
           <div class="navbar-start">
@@ -82,11 +105,11 @@
           </div>
           <div class="navbar-end">
             <a
-              class="hidden sm:block py-3 px-8 text-[#484848] font-medium rounded-lg cursor-pointer mr-2 hover:bg-gray-200 duration-300 ease-in-out"
+              class="hidden sm:flex btn px-10 bg-transparent border-none shadow-none text-[#484848] font-medium rounded-lg cursor-pointer mr-2 hover:bg-gray-200 duration-300 ease-in-out"
               >Sign in</a
             >
             <a
-              class="py-3 px-2 sm:px-8 bg-[#1572D3] text-white font-medium rounded-lg cursor-pointer hover:bg-blue-700 duration-300 ease-in-out"
+              class="btn px-2 sm:px-10 bg-[#1572D3] text-white font-medium rounded-lg cursor-pointer hover:bg-blue-700 duration-300 ease-in-out"
               >Sign up</a
             >
           </div>
@@ -94,9 +117,9 @@
       </nav>
 
       <!-- Banner -->
-      <section class="mx-auto">
+      <section>
         <div
-          class="grid grid-cols-1 lg:grid-cols-2 lg:gap-[100px] justify-center place-items-center"
+          class="grid grid-cols-1 lg:grid-cols-2 lg:gap-[100px] 2xl:gap-[350px] justify-center place-items-center"
         >
           <!-- text container -->
           <div class="px-2 md:px-0 md:w-[390px] order-last lg:order-first">
@@ -133,7 +156,7 @@
 
         <!-- search container -->
         <div
-          class="mt-28 md:mt-0 container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 justify-center place-content-center p-3 shadow-md gap-5"
+          class="bg-white mt-28 lg:mt-0 container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 justify-center place-content-center p-3 shadow-md gap-5"
         >
           <div class="flex justify-left items-center gap-4">
             <div class="h-9 w-px bg-gray-400 sm:bg-white"></div>
@@ -216,14 +239,77 @@
               >
             </div>
           </div>
-          <button class="btn text-white bg-[#1572D3] font-medium px-[51px]">
-            Search
-          </button>
+          <div class="inline-flex justify-center sm:justify-end">
+            <button class="btn text-white bg-[#1572D3] font-medium px-[51px]">
+              Search
+            </button>
+          </div>
         </div>
       </section>
     </header>
 
-    <main></main>
+    <main>
+      <!-- How it works section -->
+      <section class="mt-24">
+        <!-- text container -->
+        <div class="container mx-auto text-center">
+          <button class="btn text-[#1572D3] text-sm font-medium bg-blue-50">
+            HOW IT WORK
+          </button>
+          <h2 class="text-[38px] font-medium mt-8 mb-20">
+            Rent with following 3 working steps
+          </h2>
+
+          <!-- card container -->
+          <div class="flex gap-32 justify-center items-center mb-40">
+            <!-- card 1 -->
+            <div>
+              <i
+                class="fa-solid fa-location-dot text-5xl p-8 text-[#1572D3] bg-blue-50 rounded-2xl"
+              ></i>
+              <h4 class="text-xl font-medium mt-10 mb-6">Choose location</h4>
+              <p class="text-sm text-[#6D6D6D] font-medium w-2/3 mx-auto">
+                Choose your and find your best car
+              </p>
+            </div>
+
+            <!-- card 2 -->
+            <div>
+              <i
+                class="fa-solid fa-calendar-days text-5xl p-8 text-[#1572D3] bg-blue-50 rounded-2xl"
+              ></i>
+              <h4 class="text-xl font-medium mt-10 mb-6">Pick-up date</h4>
+              <p class="text-sm text-[#6D6D6D] font-medium w-2/3 mx-auto">
+                Select your pick up date and time to book your car
+              </p>
+            </div>
+
+            <!-- card 3 -->
+            <div>
+              <i
+                class="fa-solid fa-car-rear text-5xl p-8 text-[#1572D3] bg-blue-50 rounded-2xl"
+              ></i>
+              <h4 class="text-xl font-medium mt-10 mb-6">Book your car</h4>
+              <p class="text-sm text-[#6D6D6D] font-medium w-2/3 mx-auto">
+                Book your car and we will deliver it directly to you
+              </p>
+            </div>
+          </div>
+
+          <!-- sponsors container -->
+          <div class="flex gap-24 justify-center items-center mb-[86px]">
+            <img src="./icons/honda.png" alt="" />
+            <img src="./icons/jaguar.png" alt="" />
+            <img src="./icons/nissan.png" alt="" />
+            <img src="./icons/volvo.png" alt="" />
+            <img src="./icons/audi.png" alt="" />
+            <img src="./icons/acura.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!--  -->
+    </main>
 
     <footer class="mt-[1000px]"></footer>
   </body>
