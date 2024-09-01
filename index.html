@@ -66,6 +66,9 @@
       .animate-scroll {
         animation: scroll 20s linear infinite;
       }
+      .animate-scroll-sponsors {
+        animation: scroll 20s linear infinite;
+      }
     </style>
   </head>
   <body class="font-poppins relative">
@@ -141,7 +144,7 @@
           class="grid grid-cols-1 lg:grid-cols-2 lg:gap-[100px] 2xl:gap-[350px] justify-center place-items-center"
         >
           <!-- text container -->
-          <div class="px-2 md:px-0 md:w-[390px] order-last lg:order-first">
+          <div class="px-4 lg:px-0 md:w-[390px] order-last lg:order-first">
             <h1 class="text-5xl font-semibold">
               Find, book and rent a car
               <span class="text-[#1572D3]">Easily</span>
@@ -174,7 +177,7 @@
         </div>
 
         <!-- search container -->
-        <div class="px-2 lg:px-0">
+        <div class="px-4 lg:px-0">
           <div
             class="bg-white mt-28 lg:mt-0 container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 justify-center place-content-center p-3 shadow-md gap-5 rounded-xl"
           >
@@ -322,7 +325,7 @@
 
         <!-- sponsors container -->
         <div class="overflow-hidden relative">
-          <div class="flex animate-scroll">
+          <div class="flex animate-scroll-sponsors">
             <!-- first iteration -->
             <img class="mx-24 h-[50px]" src="./icons/honda.png" alt="" />
             <img class="mx-24 h-[50px]" src="./icons/jaguar.png" alt="" />
@@ -377,7 +380,7 @@
             <div></div>
 
             <!-- text content -->
-            <div class="mt-32">
+            <div class="mt-32 px-4 lg:px-0">
               <button class="btn text-[#1572D3] text-sm font-medium bg-blue-50">
                 WHY CHOOSE US
               </button>
@@ -731,7 +734,7 @@
         <!-- title container -->
         <div class="text-center px-2 lg:px-0">
           <button class="btn text-[#1572D3] text-sm font-medium bg-blue-50">
-            Popular Rental Deals
+            TESTIMONIALS
           </button>
           <h1 class="text-5xl font-medium mt-6 mb-14">
             What peole say about us?
@@ -848,94 +851,48 @@
                 <small>From Moscow, Russia</small>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <!-- card  -->
-            <div
-              class="w-[794px] shadow-xl rounded-3xl flex m-10 bg-white"
-              style="flex: 0 0 auto"
-            >
-              <img src="./images/reviewer-2.png" alt="" />
-              <div class="p-10">
-                <h1 class="text-2xl font-medium">
-                  <span class="text-[64px] font-medium">5.0</span> stars
-                </h1>
-                <div class="text-[#EFBF14] mt-4 mb-10">
-                  <i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i>
-                </div>
-                <p class="text-lg">
-                  “I feel very secure when using caretall's services. Your
-                  customer care team is very enthusiastic and the driver is
-                  always on time.”
-                </p>
-                <h5 class="text-2xl font-medium mt-20">Angelina</h5>
-                <small>From Dinajpur, Bangladesh</small>
-              </div>
-            </div>
+      <!-- App Download section -->
+      <section class="container mx-auto relative">
+        <img
+          class="absolute top-10 lg:-top-40 -left-[33%] -z-10 opacity-80"
+          src="./icons/bg_triangle.png"
+          alt=""
+        />
 
-            <!-- card  -->
-            <div
-              class="w-[794px] shadow-xl rounded-3xl flex m-10 bg-white"
-              style="flex: 0 0 auto"
+        <div
+          class="flex flex-col sm:flex-row justify-between items-end px-4 xl:px-0"
+        >
+          <!-- text container -->
+          <div class="py-[100px]">
+            <button class="btn text-[#1572D3] text-sm font-medium bg-blue-100">
+              DOWNLOAD
+            </button>
+            <h1 class="text-5xl font-semibold mt-5 mb-9 w-2/3 leading-[60px]">
+              Download Rentcars App for <span class="text-[#1572D3]">FREE</span>
+            </h1>
+            <small class="text-base font-normal"
+              >For faster, easier booking and exclusive deals.</small
             >
-              <img src="./images/reviewer-1.png" alt="" />
-              <div class="p-10">
-                <h1 class="text-2xl font-medium">
-                  <span class="text-[64px] font-medium">5.0</span> stars
-                </h1>
-                <div class="text-[#EFBF14] mt-4 mb-10">
-                  <i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i>
-                </div>
-                <p class="text-lg">
-                  “I feel very secure when using caretall's services. Your
-                  customer care team is very enthusiastic and the driver is
-                  always on time.”
-                </p>
-                <h5 class="text-2xl font-medium mt-20">Charlie Johnson</h5>
-                <small>From Moscow, Russia</small>
-              </div>
-            </div>
-
-            <!-- card  -->
             <div
-              class="w-[794px] shadow-xl rounded-3xl flex m-10 bg-white"
-              style="flex: 0 0 auto"
+              class="flex justify-start items-center gap-4 mt-9 cursor-pointer"
             >
-              <img src="./images/reviewer-2.png" alt="" />
-              <div class="p-10">
-                <h1 class="text-2xl font-medium">
-                  <span class="text-[64px] font-medium">5.0</span> stars
-                </h1>
-                <div class="text-[#EFBF14] mt-4 mb-10">
-                  <i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i
-                  ><i class="fa-solid fa-star"></i>
-                </div>
-                <p class="text-lg">
-                  “I feel very secure when using caretall's services. Your
-                  customer care team is very enthusiastic and the driver is
-                  always on time.”
-                </p>
-                <h5 class="text-2xl font-medium mt-20">Charlie Johnson</h5>
-                <small>From Moscow, Russia</small>
-              </div>
+              <img src="./icons/google_play.png" alt="" />
+              <img src="./icons/app_store.png" alt="" />
             </div>
           </div>
+
+          <!-- image container -->
+          <div><img src="./icons/iphone_mockup.png" alt="" /></div>
         </div>
       </section>
     </main>
 
     <footer class="bg-[#051C34] text-base-content text-white">
-      <div class="footer container mx-auto py-10 px-4 lg:px-0">
+      <div class="footer container mx-auto py-10 px-6 xl:px-0">
         <aside>
           <div class="flex justify-center items-center gap-2 mb-4">
             <img src="./icons/brand_logo_white.png" alt="" />
@@ -1094,7 +1051,20 @@
 
 <!-- javascript -->
 <script>
+  // sponsors
+  const sponsors = document.querySelector(".animate-scroll-sponsors");
+
+  sponsors.addEventListener("mouseover", () => {
+    sponsors.style.animationPlayState = "paused";
+  });
+
+  sponsors.addEventListener("mouseout", () => {
+    sponsors.style.animationPlayState = "running";
+  });
+
+  // reviews
   const menu = document.querySelector(".animate-scroll");
+
   menu.addEventListener("mouseover", () => {
     menu.style.animationPlayState = "paused";
   });
